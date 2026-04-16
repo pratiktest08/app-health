@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Crash & ANR — PL Capital Health</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+<aside id="sidebar" class="card"></aside>
+
+<div class="main-scroll">
+  <header id="topbar" class="topbar card border-b" style="border-color:var(--border)"></header>
+  <main class="main-content animate-fade-in">
+
+    <!-- Title -->
+    <div style="display:flex;align-items:flex-start;justify-content:space-between;flex-wrap:wrap;gap:12px">
+      <div>
+        <h1 class="page-title">Crash &amp; ANR</h1>
+        <p class="page-subtitle">Google Play Console · Firebase Crashlytics · Last 14 days</p>
+      </div>
+      <div style="display:flex;gap:8px">
+        <span class="badge badge-ok">Crash 0.42%</span>
+        <span class="badge badge-warn">ANR 0.31% ↑</span>
+        <span class="badge badge-danger">3 Open Issues</span>
+      </div>
+    </div>
+
+    <!-- KPI row -->
+    <div class="grid-6">
+      <div class="stat-card card animate-slide-up" style="animation-delay:.04s">
+        <div class="stat-icon" style="background:rgba(239,68,68,.13);margin-bottom:10px">
+          <svg style="width:18px;height:18px;color:#EF4444" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+        </div>
+        <div class="stat-value">34</div>
+        <div class="stat-label">Crashes Today</div>
+        <div class="prog-bar"><div class="prog-fill" style="width:42%;background:#EF4444"></div></div>
+        <div style="font-size:10px;color:var(--text-muted);margin-top:4px">0.42% crash rate</div>
+      </div>
+      <div class="stat-card card animate-slide-up" style="animation-delay:.08s">
+        <div class="stat-icon" style="background:rgba(245,158,11,.13);margin-bottom:10px">
+          <svg style="width:18px;height:18px;color:#F59E0B" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+        </div>
+        <div class="stat-value">12</div>
+        <div class="stat-label">ANR Events Today</div>
+        <div class="prog-bar"><div class="prog-fill" style="width:62%;background:#F59E0B"></div></div>
+        <div style="font-size:10px;color:var(--text-muted);margin-top:4px">0.31% ANR rate</div>
+      </div>
+      <div class="stat-card card animate-slide-up" style="animation-delay:.12s">
+        <div class="stat-icon" style="background:rgba(239,68,68,.13);margin-bottom:10px">
+          <svg style="width:18px;height:18px;color:#EF4444" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+        </div>
+        <div class="stat-value">28</div>
+        <div class="stat-label">Affected Users</div>
+        <div class="prog-bar"><div class="prog-fill" style="width:28%;background:#EF4444"></div></div>
+        <div style="font-size:10px;color:var(--text-muted);margin-top:4px">0.34% of DAU</div>
+      </div>
+      <div class="stat-card card animate-slide-up" style="animation-delay:.16s">
+        <div class="stat-icon" style="background:rgba(76,76,204,.18);margin-bottom:10px">
+          <svg style="width:18px;height:18px;color:#4C4CCC" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/></svg>
+        </div>
+        <div class="stat-value">v3.1.0</div>
+        <div class="stat-label">Most Affected</div>
+        <div class="prog-bar"><div class="prog-fill" style="width:52%;background:#4C4CCC"></div></div>
+        <div style="font-size:10px;color:var(--text-muted);margin-top:4px">52% of all crashes</div>
+      </div>
+      <div class="stat-card card animate-slide-up" style="animation-delay:.20s">
+        <div class="stat-icon" style="background:rgba(239,68,68,.13);margin-bottom:10px">
+          <svg style="width:18px;height:18px;color:#EF4444" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 3H5a2 2 0 00-2 2v4m6-6h10a2 2 0 012 2v4M9 3v18m0 0h10a2 2 0 002-2V9M9 21H5a2 2 0 01-2-2V9m0 0h18"/></svg>
+        </div>
+        <div class="stat-value">3</div>
+        <div class="stat-label">Open Issues</div>
+        <div class="prog-bar"><div class="prog-fill" style="width:60%;background:#EF4444"></div></div>
+        <div style="font-size:10px;color:var(--text-muted);margin-top:4px">2 investigating · 2 resolved</div>
+      </div>
+      <div class="stat-card card animate-slide-up" style="animation-delay:.24s">
+        <div class="stat-icon" style="background:rgba(31,177,90,.13);margin-bottom:10px">
+          <svg style="width:18px;height:18px;color:#1FB15A" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+        </div>
+        <div class="stat-value">Android 12</div>
+        <div class="stat-label">Top OS Affected</div>
+        <div class="prog-bar"><div class="prog-fill" style="width:41%;background:#1FB15A"></div></div>
+        <div style="font-size:10px;color:var(--text-muted);margin-top:4px">14 crashes on A12</div>
+      </div>
+    </div>
+
+    <!-- Trend + OS breakdown -->
+    <div class="grid-2">
+      <div class="section-card animate-slide-up" style="animation-delay:.06s">
+        <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:14px">
+          <div>
+            <div style="font-size:14px;font-weight:600;color:var(--text-primary)">Crash &amp; ANR Trend</div>
+            <div style="font-size:11px;color:var(--text-muted);margin-top:2px">Daily event count · 14 days</div>
+          </div>
+        </div>
+        <div class="chart-wrap" style="height:210px"><canvas id="crashTrendChart"></canvas></div>
+      </div>
+      <div class="section-card animate-slide-up" style="animation-delay:.10s">
+        <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:14px">
+          <div>
+            <div style="font-size:14px;font-weight:600;color:var(--text-primary)">Crashes by OS Version</div>
+            <div style="font-size:11px;color:var(--text-muted);margin-top:2px">14-day total · All versions</div>
+          </div>
+        </div>
+        <div class="chart-wrap" style="height:210px"><canvas id="osChart"></canvas></div>
+      </div>
+    </div>
+
+    <!-- Version donut + stack trace panel -->
+    <div class="grid-1-2">
+      <div class="section-card animate-slide-up" style="animation-delay:.06s">
+        <div style="margin-bottom:14px">
+          <div style="font-size:14px;font-weight:600;color:var(--text-primary)">Crash by App Version</div>
+          <div style="font-size:11px;color:var(--text-muted);margin-top:2px">% of total crash events</div>
+        </div>
+        <div class="chart-wrap" style="height:170px"><canvas id="versionCrashChart"></canvas></div>
+        <div style="margin-top:14px;padding:12px;background:var(--bg-card2);border-radius:10px;border:1px solid var(--border)">
+          <div style="font-size:11px;font-weight:600;color:var(--text-primary);margin-bottom:8px">Key Insight</div>
+          <div style="font-size:11px;color:var(--text-muted);line-height:1.6">v3.1.0 accounts for <span style="color:#EF4444;font-weight:700">52%</span> of all crashes despite only having 27% of active users. Recommend prioritising v3.1.0 hotfix before next release cycle.</div>
+        </div>
+      </div>
+      <div class="section-card animate-slide-up" style="animation-delay:.10s">
+        <div style="margin-bottom:14px">
+          <div style="font-size:14px;font-weight:600;color:var(--text-primary)">Top Crash — Stack Trace Preview</div>
+          <div style="font-size:11px;color:var(--text-muted);margin-top:2px">CRH-001 · NullPointerException · 14 events</div>
+        </div>
+        <div style="background:var(--bg-card2);border-radius:10px;padding:14px;border:1px solid var(--border);font-family:monospace;font-size:11px;line-height:1.8;color:var(--text-muted);overflow-x:auto">
+          <div style="color:#EF4444;font-weight:700;margin-bottom:6px">java.lang.NullPointerException</div>
+          <div style="color:var(--text-muted)">  at com.plcapital.trade.vm.<span style="color:#4C4CCC">TradeViewModel</span>.loadPortfolio(<span style="color:#F59E0B">TradeViewModel.kt:142</span>)</div>
+          <div>  at com.plcapital.trade.vm.<span style="color:#4C4CCC">TradeViewModel</span>.onResume(<span style="color:#F59E0B">TradeViewModel.kt:88</span>)</div>
+          <div>  at com.plcapital.ui.<span style="color:#4C4CCC">PortfolioFragment</span>.onViewCreated(<span style="color:#F59E0B">PortfolioFragment.kt:55</span>)</div>
+          <div>  at androidx.fragment.app.<span style="color:#9191C4">Fragment</span>.performCreateView(Fragment.java:3104)</div>
+          <div>  at androidx.fragment.app.<span style="color:#9191C4">FragmentManager</span>.moveToState(FragmentManager.java:4228)</div>
+          <div style="color:var(--text-muted);margin-top:8px">  ... 38 more frames</div>
+        </div>
+        <div style="display:flex;gap:8px;margin-top:12px">
+          <button class="btn-primary" style="flex:1">Open in Crashlytics ↗</button>
+          <button class="btn-secondary" style="flex:1">Assign to Dev</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Crash issues table -->
+    <div class="section-card animate-slide-up" style="animation-delay:.06s">
+      <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:16px">
+        <div>
+          <div style="font-size:14px;font-weight:600;color:var(--text-primary)">Crash Issues</div>
+          <div style="font-size:11px;color:var(--text-muted);margin-top:2px">Active crash reports · Firebase Crashlytics</div>
+        </div>
+        <div style="display:flex;gap:8px">
+          <span class="badge badge-danger">3 Open</span>
+          <span class="badge badge-warn">1 Investigating</span>
+          <span class="badge badge-ok">2 Resolved</span>
+        </div>
+      </div>
+      <div style="overflow-x:auto">
+        <table class="dash-table">
+          <thead><tr><th>ID</th><th>Title</th><th>Count</th><th>Users</th><th>Version</th><th>OS</th><th>Status</th><th>First Seen</th></tr></thead>
+          <tbody id="crash-tbody"></tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- ANR table -->
+    <div class="section-card animate-slide-up" style="animation-delay:.06s">
+      <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:16px">
+        <div>
+          <div style="font-size:14px;font-weight:600;color:var(--text-primary)">ANR Issues</div>
+          <div style="font-size:11px;color:var(--text-muted);margin-top:2px">Application Not Responding events · Google Play Console</div>
+        </div>
+        <div style="display:flex;gap:8px">
+          <span class="badge badge-warn">1 Open</span>
+          <span class="badge badge-warn">1 Investigating</span>
+          <span class="badge badge-ok">1 Resolved</span>
+        </div>
+      </div>
+      <div style="overflow-x:auto">
+        <table class="dash-table">
+          <thead><tr><th>ID</th><th>Title</th><th>Count</th><th>Users</th><th>Version</th><th>OS</th><th>Status</th><th>First Seen</th></tr></thead>
+          <tbody id="anr-tbody"></tbody>
+        </table>
+      </div>
+    </div>
+
+  </main>
+</div>
+
+<div id="alert-panel" class="card"></div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.2/dist/chart.umd.min.js"></script>
+<script src="js/main.js"></script>
+<script src="js/crash-anr.js"></script>
+</body>
+</html>

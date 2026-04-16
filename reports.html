@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Reports & Export — PL Capital Health</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+<aside id="sidebar" class="card"></aside>
+
+<div class="main-scroll">
+  <header id="topbar" class="topbar card border-b" style="border-color:var(--border)"></header>
+  <main class="main-content animate-fade-in">
+
+    <!-- Title -->
+    <div style="display:flex;align-items:flex-start;justify-content:space-between;flex-wrap:wrap;gap:12px">
+      <div>
+        <h1 class="page-title">Reports &amp; Export</h1>
+        <p class="page-subtitle">Scheduled reports · On-demand exports · PDF / Excel / CSV</p>
+      </div>
+      <div style="display:flex;gap:8px">
+        <span class="badge badge-ok">7 Active Templates</span>
+        <span class="badge badge-info">8 Recent Exports</span>
+      </div>
+    </div>
+
+    <!-- Run notice -->
+    <div id="run-notice" style="display:none;padding:12px 16px;border-radius:10px;background:rgba(31,177,90,.12);border:1px solid rgba(31,177,90,.3);color:#1FB15A;font-size:12px;font-weight:600"></div>
+
+    <!-- KPI row -->
+    <div class="grid-4">
+      <div class="stat-card card animate-slide-up" style="animation-delay:.04s">
+        <div class="stat-icon" style="background:rgba(76,76,204,.18);margin-bottom:10px">
+          <svg style="width:18px;height:18px;color:#4C4CCC" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+        </div>
+        <div class="stat-value">7</div>
+        <div class="stat-label">Report Templates</div>
+        <div class="prog-bar"><div class="prog-fill" style="width:100%;background:#4C4CCC"></div></div>
+        <div style="font-size:10px;color:var(--text-muted);margin-top:4px">6 active · 1 paused</div>
+      </div>
+      <div class="stat-card card animate-slide-up" style="animation-delay:.08s">
+        <div class="stat-icon" style="background:rgba(31,177,90,.13);margin-bottom:10px">
+          <svg style="width:18px;height:18px;color:#1FB15A" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/></svg>
+        </div>
+        <div class="stat-value">38</div>
+        <div class="stat-label">Exports This Month</div>
+        <div class="prog-bar"><div class="prog-fill" style="width:63%;background:#1FB15A"></div></div>
+        <div style="font-size:10px;color:var(--text-muted);margin-top:4px">+14% vs last month</div>
+      </div>
+      <div class="stat-card card animate-slide-up" style="animation-delay:.12s">
+        <div class="stat-icon" style="background:rgba(245,158,11,.13);margin-bottom:10px">
+          <svg style="width:18px;height:18px;color:#F59E0B" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+        </div>
+        <div class="stat-value">08:00</div>
+        <div class="stat-label">Next Scheduled</div>
+        <div class="prog-bar"><div class="prog-fill" style="width:100%;background:#F59E0B"></div></div>
+        <div style="font-size:10px;color:var(--text-muted);margin-top:4px">Daily Health Summary</div>
+      </div>
+      <div class="stat-card card animate-slide-up" style="animation-delay:.16s">
+        <div class="stat-icon" style="background:rgba(15,15,131,.18);margin-bottom:10px">
+          <svg style="width:18px;height:18px;color:#4C4CCC" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 8h14M5 8a2 2 0 110-4h14a2 2 0 110 4M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8m-9 4h4"/></svg>
+        </div>
+        <div class="stat-value">18.6 MB</div>
+        <div class="stat-label">Storage Used</div>
+        <div class="prog-bar"><div class="prog-fill" style="width:37%;background:#0F0F83"></div></div>
+        <div style="font-size:10px;color:var(--text-muted);margin-top:4px">of 50 MB quota</div>
+      </div>
+    </div>
+
+    <!-- Export volume chart + quick actions -->
+    <div class="grid-2-1">
+      <div class="section-card animate-slide-up" style="animation-delay:.06s">
+        <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:14px">
+          <div>
+            <div style="font-size:14px;font-weight:600;color:var(--text-primary)">Export Activity</div>
+            <div style="font-size:11px;color:var(--text-muted);margin-top:2px">Reports generated by format · Last 7 days</div>
+          </div>
+        </div>
+        <div class="chart-wrap" style="height:200px"><canvas id="exportChart"></canvas></div>
+      </div>
+
+      <div class="section-card animate-slide-up" style="animation-delay:.10s">
+        <div style="font-size:14px;font-weight:600;color:var(--text-primary);margin-bottom:16px">Quick Export</div>
+        <div style="display:flex;flex-direction:column;gap:10px">
+          <div style="padding:12px;background:var(--bg-card2);border:1px solid var(--border);border-radius:10px;display:flex;align-items:center;justify-content:space-between;gap:12px">
+            <div>
+              <div style="font-size:12px;font-weight:600;color:var(--text-primary)">📄 Daily Summary PDF</div>
+              <div style="font-size:10px;color:var(--text-muted);margin-top:2px">All KPIs · Today's snapshot</div>
+            </div>
+            <button class="btn-primary" style="white-space:nowrap">Generate</button>
+          </div>
+          <div style="padding:12px;background:var(--bg-card2);border:1px solid var(--border);border-radius:10px;display:flex;align-items:center;justify-content:space-between;gap:12px">
+            <div>
+              <div style="font-size:12px;font-weight:600;color:var(--text-primary)">📊 Trade Data Excel</div>
+              <div style="font-size:10px;color:var(--text-muted);margin-top:2px">All transactions · This week</div>
+            </div>
+            <button class="btn-primary" style="white-space:nowrap">Generate</button>
+          </div>
+          <div style="padding:12px;background:var(--bg-card2);border:1px solid var(--border);border-radius:10px;display:flex;align-items:center;justify-content:space-between;gap:12px">
+            <div>
+              <div style="font-size:12px;font-weight:600;color:var(--text-primary)">📋 Crash Log CSV</div>
+              <div style="font-size:10px;color:var(--text-muted);margin-top:2px">All crash events · Last 14 days</div>
+            </div>
+            <button class="btn-primary" style="white-space:nowrap">Generate</button>
+          </div>
+          <div style="padding:12px;background:var(--bg-card2);border:1px solid var(--border);border-radius:10px;display:flex;align-items:center;justify-content:space-between;gap:12px">
+            <div>
+              <div style="font-size:12px;font-weight:600;color:var(--text-primary)">📄 User Retention PDF</div>
+              <div style="font-size:10px;color:var(--text-muted);margin-top:2px">Retention curves · 30-day</div>
+            </div>
+            <button class="btn-primary" style="white-space:nowrap">Generate</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Report templates table -->
+    <div class="section-card animate-slide-up" style="animation-delay:.06s">
+      <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:16px">
+        <div>
+          <div style="font-size:14px;font-weight:600;color:var(--text-primary)">Report Templates</div>
+          <div style="font-size:11px;color:var(--text-muted);margin-top:2px">Scheduled &amp; on-demand report configurations</div>
+        </div>
+        <button class="btn-primary">+ New Template</button>
+      </div>
+      <div style="overflow-x:auto">
+        <table class="dash-table">
+          <thead><tr><th>ID</th><th>Report Name</th><th>Category</th><th>Schedule</th><th>Last Run</th><th>Format</th><th>Status</th><th>Actions</th></tr></thead>
+          <tbody id="template-tbody"></tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Export history -->
+    <div class="section-card animate-slide-up" style="animation-delay:.06s">
+      <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:16px">
+        <div>
+          <div style="font-size:14px;font-weight:600;color:var(--text-primary)">Export History</div>
+          <div style="font-size:11px;color:var(--text-muted);margin-top:2px">Recent generated reports · Available for 30 days</div>
+        </div>
+        <input type="text" class="dash-input" placeholder="Search exports..." style="width:200px" />
+      </div>
+      <div style="overflow-x:auto">
+        <table class="dash-table">
+          <thead><tr><th>Report</th><th>Format</th><th>Size</th><th>Generated By</th><th>Date</th><th>Status</th><th>Action</th></tr></thead>
+          <tbody id="export-tbody"></tbody>
+        </table>
+      </div>
+    </div>
+
+  </main>
+</div>
+
+<div id="alert-panel" class="card"></div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.2/dist/chart.umd.min.js"></script>
+<script src="js/main.js"></script>
+<script src="js/reports.js"></script>
+</body>
+</html>

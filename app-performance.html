@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>App Performance — PL Capital Health</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+<aside id="sidebar" class="card"></aside>
+
+<div class="main-scroll">
+  <header id="topbar" class="topbar card border-b" style="border-color:var(--border)"></header>
+  <main class="main-content animate-fade-in">
+
+    <!-- Title -->
+    <div style="display:flex;align-items:flex-start;justify-content:space-between;flex-wrap:wrap;gap:12px">
+      <div>
+        <h1 class="page-title">App Performance</h1>
+        <p class="page-subtitle">Firebase Performance · Google Play Console · Real-time</p>
+      </div>
+      <div style="display:flex;gap:8px">
+        <span class="badge badge-ok">Cold Start 1.8s ↓</span>
+        <span class="badge badge-ok">FPS 58 avg</span>
+        <span class="badge badge-warn">ANR 0.31% ↑</span>
+      </div>
+    </div>
+
+    <!-- KPI row -->
+    <div class="grid-6">
+      <div class="stat-card card animate-slide-up" style="animation-delay:.04s">
+        <div class="stat-icon" style="background:rgba(239,68,68,.13);margin-bottom:10px">
+          <svg style="width:18px;height:18px;color:#EF4444" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 3H5a2 2 0 00-2 2v4m6-6h10a2 2 0 012 2v4M9 3v18m0 0h10a2 2 0 002-2V9M9 21H5a2 2 0 01-2-2V9m0 0h18"/></svg>
+        </div>
+        <div class="stat-value">1.8s</div>
+        <div class="stat-label">Cold Start (avg)</div>
+        <div class="prog-bar"><div class="prog-fill" style="width:60%;background:#1FB15A"></div></div>
+        <div style="font-size:10px;color:var(--text-muted);margin-top:4px">Threshold: 3s</div>
+      </div>
+      <div class="stat-card card animate-slide-up" style="animation-delay:.08s">
+        <div class="stat-icon" style="background:rgba(31,177,90,.13);margin-bottom:10px">
+          <svg style="width:18px;height:18px;color:#1FB15A" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+        </div>
+        <div class="stat-value">0.9s</div>
+        <div class="stat-label">Warm Start</div>
+        <div class="prog-bar"><div class="prog-fill" style="width:30%;background:#1FB15A"></div></div>
+        <div style="font-size:10px;color:var(--text-muted);margin-top:4px">Threshold: 1.5s</div>
+      </div>
+      <div class="stat-card card animate-slide-up" style="animation-delay:.12s">
+        <div class="stat-icon" style="background:rgba(76,76,204,.18);margin-bottom:10px">
+          <svg style="width:18px;height:18px;color:#4C4CCC" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"/></svg>
+        </div>
+        <div class="stat-value">58</div>
+        <div class="stat-label">Avg FPS</div>
+        <div class="prog-bar"><div class="prog-fill" style="width:97%;background:#1FB15A"></div></div>
+        <div style="font-size:10px;color:var(--text-muted);margin-top:4px">Target: 60 FPS</div>
+      </div>
+      <div class="stat-card card animate-slide-up" style="animation-delay:.16s">
+        <div class="stat-icon" style="background:rgba(245,158,11,.13);margin-bottom:10px">
+          <svg style="width:18px;height:18px;color:#F59E0B" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z"/></svg>
+        </div>
+        <div class="stat-value">142MB</div>
+        <div class="stat-label">Memory Usage</div>
+        <div class="prog-bar"><div class="prog-fill" style="width:71%;background:#F59E0B"></div></div>
+        <div style="font-size:10px;color:var(--text-muted);margin-top:4px">Threshold: 200MB</div>
+      </div>
+      <div class="stat-card card animate-slide-up" style="animation-delay:.20s">
+        <div class="stat-icon" style="background:rgba(76,76,204,.18);margin-bottom:10px">
+          <svg style="width:18px;height:18px;color:#4C4CCC" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.111 16.404a5.5 5.5 0 017.778 0M12 20h.01m-7.08-7.071c3.904-3.905 10.236-3.905 14.14 0M1.394 9.393c5.857-5.857 15.355-5.857 21.213 0"/></svg>
+        </div>
+        <div class="stat-value">245ms</div>
+        <div class="stat-label">Avg API Latency</div>
+        <div class="prog-bar"><div class="prog-fill" style="width:49%;background:#F59E0B"></div></div>
+        <div style="font-size:10px;color:var(--text-muted);margin-top:4px">Threshold: 500ms</div>
+      </div>
+      <div class="stat-card card animate-slide-up" style="animation-delay:.24s">
+        <div class="stat-icon" style="background:rgba(31,177,90,.13);margin-bottom:10px">
+          <svg style="width:18px;height:18px;color:#1FB15A" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+        </div>
+        <div class="stat-value">98.7%</div>
+        <div class="stat-label">API Success Rate</div>
+        <div class="prog-bar"><div class="prog-fill" style="width:98%;background:#1FB15A"></div></div>
+        <div style="font-size:10px;color:var(--text-muted);margin-top:4px">Threshold: 99%</div>
+      </div>
+    </div>
+
+    <!-- Charts row 1 -->
+    <div class="grid-2">
+      <div class="section-card animate-slide-up" style="animation-delay:.06s">
+        <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:14px">
+          <div>
+            <div style="font-size:14px;font-weight:600;color:var(--text-primary)">App Startup Times</div>
+            <div style="font-size:11px;color:var(--text-muted);margin-top:2px">Cold · Warm · Hot start (seconds)</div>
+          </div>
+          <div style="display:flex;gap:10px;font-size:11px;color:var(--text-muted)">
+            <span style="display:flex;align-items:center;gap:4px"><span style="width:8px;height:8px;border-radius:50%;background:#EF4444;display:inline-block"></span>Cold</span>
+            <span style="display:flex;align-items:center;gap:4px"><span style="width:8px;height:8px;border-radius:50%;background:#F59E0B;display:inline-block"></span>Warm</span>
+            <span style="display:flex;align-items:center;gap:4px"><span style="width:8px;height:8px;border-radius:50%;background:#1FB15A;display:inline-block"></span>Hot</span>
+          </div>
+        </div>
+        <div class="chart-wrap" style="height:210px"><canvas id="startupChart"></canvas></div>
+      </div>
+      <div class="section-card animate-slide-up" style="animation-delay:.10s">
+        <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:14px">
+          <div>
+            <div style="font-size:14px;font-weight:600;color:var(--text-primary)">Frame Rate (FPS)</div>
+            <div style="font-size:11px;color:var(--text-muted);margin-top:2px">Rendered frames per second · 12h</div>
+          </div>
+          <span class="badge badge-ok">Avg 58 FPS</span>
+        </div>
+        <div class="chart-wrap" style="height:210px"><canvas id="fpsChart"></canvas></div>
+      </div>
+    </div>
+
+    <!-- Charts row 2 -->
+    <div class="grid-2">
+      <div class="section-card animate-slide-up" style="animation-delay:.06s">
+        <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:14px">
+          <div>
+            <div style="font-size:14px;font-weight:600;color:var(--text-primary)">Network Latency by Endpoint</div>
+            <div style="font-size:11px;color:var(--text-muted);margin-top:2px">Average response time (ms)</div>
+          </div>
+          <div style="display:flex;gap:8px;font-size:10px">
+            <span style="display:flex;align-items:center;gap:4px"><span style="width:8px;height:8px;border-radius:2px;background:#1FB15A;display:inline-block"></span>OK</span>
+            <span style="display:flex;align-items:center;gap:4px"><span style="width:8px;height:8px;border-radius:2px;background:#F59E0B;display:inline-block"></span>Slow</span>
+            <span style="display:flex;align-items:center;gap:4px"><span style="width:8px;height:8px;border-radius:2px;background:#EF4444;display:inline-block"></span>Critical</span>
+          </div>
+        </div>
+        <div class="chart-wrap" style="height:210px"><canvas id="networkChart"></canvas></div>
+      </div>
+      <div class="section-card animate-slide-up" style="animation-delay:.10s">
+        <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:14px">
+          <div>
+            <div style="font-size:14px;font-weight:600;color:var(--text-primary)">Memory &amp; CPU Usage</div>
+            <div style="font-size:11px;color:var(--text-muted);margin-top:2px">12h rolling · Firebase Performance</div>
+          </div>
+        </div>
+        <div class="chart-wrap" style="height:210px"><canvas id="memoryChart"></canvas></div>
+      </div>
+    </div>
+
+    <!-- Slow renders table -->
+    <div class="section-card animate-slide-up" style="animation-delay:.06s">
+      <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:16px">
+        <div>
+          <div style="font-size:14px;font-weight:600;color:var(--text-primary)">Screen Render Performance</div>
+          <div style="font-size:11px;color:var(--text-muted);margin-top:2px">P50 / P90 / P99 frame render times</div>
+        </div>
+        <button class="btn-secondary" onclick="exportCSV([['Screen','P50','P90','P99','Status']],'render-perf.csv')">Export CSV</button>
+      </div>
+      <div style="overflow-x:auto">
+        <table class="dash-table">
+          <thead><tr><th>Screen</th><th>P50</th><th>P90</th><th>P99</th><th>Status</th></tr></thead>
+          <tbody id="slow-tbody"></tbody>
+        </table>
+      </div>
+    </div>
+
+  </main>
+</div>
+
+<div id="alert-panel" class="card"></div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.2/dist/chart.umd.min.js"></script>
+<script src="js/main.js"></script>
+<script src="js/app-performance.js"></script>
+</body>
+</html>

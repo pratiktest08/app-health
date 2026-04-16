@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>User Analytics — PL Capital Health</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+<aside id="sidebar" class="card"></aside>
+
+<div class="main-scroll">
+  <header id="topbar" class="topbar card border-b" style="border-color:var(--border)"></header>
+  <main class="main-content animate-fade-in">
+
+    <!-- Title -->
+    <div style="display:flex;align-items:flex-start;justify-content:space-between;flex-wrap:wrap;gap:12px">
+      <div>
+        <h1 class="page-title">User Analytics</h1>
+        <p class="page-subtitle">Firebase Analytics · 30-day rolling window</p>
+      </div>
+      <div style="display:flex;gap:8px">
+        <span class="badge badge-ok">DAU 8,241</span>
+        <span class="badge badge-ok">D1 Retention 68%</span>
+        <span class="badge badge-info">30-day view</span>
+      </div>
+    </div>
+
+    <!-- KPI row -->
+    <div class="grid-6">
+      <div class="stat-card card animate-slide-up" style="animation-delay:.04s">
+        <div class="stat-icon" style="background:rgba(76,76,204,.18);margin-bottom:10px">
+          <svg style="width:18px;height:18px;color:#4C4CCC" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+        </div>
+        <div class="stat-value">8,241</div>
+        <div class="stat-label">DAU (Today)</div>
+        <div class="prog-bar"><div class="prog-fill" style="width:78%;background:#4C4CCC"></div></div>
+        <div style="font-size:10px;color:var(--text-muted);margin-top:4px">Peak: 10,500</div>
+      </div>
+      <div class="stat-card card animate-slide-up" style="animation-delay:.08s">
+        <div class="stat-icon" style="background:rgba(15,15,131,.18);margin-bottom:10px">
+          <svg style="width:18px;height:18px;color:#4C4CCC" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"/></svg>
+        </div>
+        <div class="stat-value">124.8K</div>
+        <div class="stat-label">MAU (30-day)</div>
+        <div class="prog-bar"><div class="prog-fill" style="width:83%;background:#0F0F83"></div></div>
+        <div style="font-size:10px;color:var(--text-muted);margin-top:4px">+8% MoM</div>
+      </div>
+      <div class="stat-card card animate-slide-up" style="animation-delay:.12s">
+        <div class="stat-icon" style="background:rgba(31,177,90,.13);margin-bottom:10px">
+          <svg style="width:18px;height:18px;color:#1FB15A" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/></svg>
+        </div>
+        <div class="stat-value">68%</div>
+        <div class="stat-label">D1 Retention</div>
+        <div class="prog-bar"><div class="prog-fill" style="width:68%;background:#1FB15A"></div></div>
+        <div style="font-size:10px;color:var(--text-muted);margin-top:4px">D7: 41% · D30: 24%</div>
+      </div>
+      <div class="stat-card card animate-slide-up" style="animation-delay:.16s">
+        <div class="stat-icon" style="background:rgba(245,158,11,.13);margin-bottom:10px">
+          <svg style="width:18px;height:18px;color:#F59E0B" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+        </div>
+        <div class="stat-value">6m 12s</div>
+        <div class="stat-label">Avg Session</div>
+        <div class="prog-bar"><div class="prog-fill" style="width:62%;background:#F59E0B"></div></div>
+        <div style="font-size:10px;color:var(--text-muted);margin-top:4px">+18s vs last week</div>
+      </div>
+      <div class="stat-card card animate-slide-up" style="animation-delay:.20s">
+        <div class="stat-icon" style="background:rgba(31,177,90,.13);margin-bottom:10px">
+          <svg style="width:18px;height:18px;color:#1FB15A" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18 9v3m0 0v3m0-3h3m-3 0h-3m-2-5a4 4 0 11-8 0 4 4 0 018 0zM3 20a6 6 0 0112 0v1H3v-1z"/></svg>
+        </div>
+        <div class="stat-value">342</div>
+        <div class="stat-label">New Users Today</div>
+        <div class="prog-bar"><div class="prog-fill" style="width:45%;background:#1FB15A"></div></div>
+        <div style="font-size:10px;color:var(--text-muted);margin-top:4px">+12% vs yesterday</div>
+      </div>
+      <div class="stat-card card animate-slide-up" style="animation-delay:.24s">
+        <div class="stat-icon" style="background:rgba(76,76,204,.18);margin-bottom:10px">
+          <svg style="width:18px;height:18px;color:#4C4CCC" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/></svg>
+        </div>
+        <div class="stat-value">2.4</div>
+        <div class="stat-label">Avg Sessions/User</div>
+        <div class="prog-bar"><div class="prog-fill" style="width:80%;background:#4C4CCC"></div></div>
+        <div style="font-size:10px;color:var(--text-muted);margin-top:4px">Target: 3.0</div>
+      </div>
+    </div>
+
+    <!-- DAU / Retention row -->
+    <div class="grid-2">
+      <div class="section-card animate-slide-up" style="animation-delay:.06s">
+        <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:14px">
+          <div>
+            <div style="font-size:14px;font-weight:600;color:var(--text-primary)">DAU / MAU Trend</div>
+            <div style="font-size:11px;color:var(--text-muted);margin-top:2px">Daily active users · 30-day view</div>
+          </div>
+          <span class="badge badge-ok">+8% MoM</span>
+        </div>
+        <div class="chart-wrap" style="height:210px"><canvas id="dauChart"></canvas></div>
+      </div>
+      <div class="section-card animate-slide-up" style="animation-delay:.10s">
+        <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:14px">
+          <div>
+            <div style="font-size:14px;font-weight:600;color:var(--text-primary)">User Retention Curve</div>
+            <div style="font-size:11px;color:var(--text-muted);margin-top:2px">By app version · Day 0–30</div>
+          </div>
+        </div>
+        <div class="chart-wrap" style="height:210px"><canvas id="retentionChart"></canvas></div>
+      </div>
+    </div>
+
+    <!-- Session dist + geo row -->
+    <div class="grid-2-1">
+      <div class="section-card animate-slide-up" style="animation-delay:.06s">
+        <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:14px">
+          <div>
+            <div style="font-size:14px;font-weight:600;color:var(--text-primary)">Session Duration Distribution</div>
+            <div style="font-size:11px;color:var(--text-muted);margin-top:2px">Firebase Analytics · Today</div>
+          </div>
+        </div>
+        <div class="chart-wrap" style="height:190px"><canvas id="sessionDistChart"></canvas></div>
+      </div>
+      <div class="section-card animate-slide-up" style="animation-delay:.10s">
+        <div style="margin-bottom:14px">
+          <div style="font-size:14px;font-weight:600;color:var(--text-primary)">User Geography</div>
+          <div style="font-size:11px;color:var(--text-muted);margin-top:2px">Top cities by active users</div>
+        </div>
+        <div class="chart-wrap" style="height:150px"><canvas id="geoChart"></canvas></div>
+        <div style="margin-top:12px;display:flex;flex-direction:column;gap:6px">
+          <div style="display:flex;justify-content:space-between;font-size:11px"><span style="color:var(--text-muted);display:flex;align-items:center;gap:6px"><span style="width:8px;height:8px;border-radius:50%;background:#0F0F83;display:inline-block"></span>Mumbai</span><span style="font-weight:600;color:var(--text-primary)">28%</span></div>
+          <div style="display:flex;justify-content:space-between;font-size:11px"><span style="color:var(--text-muted);display:flex;align-items:center;gap:6px"><span style="width:8px;height:8px;border-radius:50%;background:#4C4CCC;display:inline-block"></span>Delhi</span><span style="font-weight:600;color:var(--text-primary)">22%</span></div>
+          <div style="display:flex;justify-content:space-between;font-size:11px"><span style="color:var(--text-muted);display:flex;align-items:center;gap:6px"><span style="width:8px;height:8px;border-radius:50%;background:#1FB15A;display:inline-block"></span>Bengaluru</span><span style="font-weight:600;color:var(--text-primary)">18%</span></div>
+          <div style="display:flex;justify-content:space-between;font-size:11px"><span style="color:var(--text-muted);display:flex;align-items:center;gap:6px"><span style="width:8px;height:8px;border-radius:50%;background:#F59E0B;display:inline-block"></span>Chennai</span><span style="font-weight:600;color:var(--text-primary)">12%</span></div>
+          <div style="display:flex;justify-content:space-between;font-size:11px"><span style="color:var(--text-muted);display:flex;align-items:center;gap:6px"><span style="width:8px;height:8px;border-radius:50%;background:#9191C4;display:inline-block"></span>Others</span><span style="font-weight:600;color:var(--text-primary)">20%</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Funnel -->
+    <div class="section-card animate-slide-up" style="animation-delay:.06s">
+      <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:14px">
+        <div>
+          <div style="font-size:14px;font-weight:600;color:var(--text-primary)">User Journey Funnel</div>
+          <div style="font-size:11px;color:var(--text-muted);margin-top:2px">App Open → Order Complete · Today</div>
+        </div>
+        <div style="text-align:right">
+          <div style="font-size:13px;font-weight:700;color:#1FB15A">31.4% overall conversion</div>
+          <div style="font-size:10px;color:var(--text-muted)">App open → Trade complete</div>
+        </div>
+      </div>
+      <div class="chart-wrap" style="height:210px"><canvas id="funnelChart"></canvas></div>
+    </div>
+
+    <!-- Top screens table -->
+    <div class="section-card animate-slide-up" style="animation-delay:.06s">
+      <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:16px">
+        <div>
+          <div style="font-size:14px;font-weight:600;color:var(--text-primary)">Top Screens by Sessions</div>
+          <div style="font-size:11px;color:var(--text-muted);margin-top:2px">Firebase Analytics · Today</div>
+        </div>
+        <button class="btn-secondary">Export CSV</button>
+      </div>
+      <div style="overflow-x:auto">
+        <table class="dash-table">
+          <thead><tr><th>Screen</th><th>Sessions</th><th>Avg Time</th><th>Bounce Rate</th><th>WoW Change</th></tr></thead>
+          <tbody id="screens-tbody"></tbody>
+        </table>
+      </div>
+    </div>
+
+  </main>
+</div>
+
+<div id="alert-panel" class="card"></div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.2/dist/chart.umd.min.js"></script>
+<script src="js/main.js"></script>
+<script src="js/user-analytics.js"></script>
+</body>
+</html>
